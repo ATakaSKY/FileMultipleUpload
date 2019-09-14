@@ -10,7 +10,7 @@ const User = require('./model/User');
 const app = express();
 
 mongoose.Promise = global.Promise;
-mongoose.connect(`mongodb+srv://sky:sky1234@cluster0-ftnod.mongodb.net/fileUploadTestDB?retryWrites=true&w=majority`,{ useNewUrlParser: true })
+mongoose.connect(`mongodb+srv://<username>:<password>@cluster0-ftnod.mongodb.net/fileUploadTestDB?retryWrites=true&w=majority`,{ useNewUrlParser: true })
     .then(res => console.log('conncdtion established'))
     .catch(res => console.log('error in connectinng to mongo'));
 
